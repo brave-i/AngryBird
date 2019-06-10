@@ -1,0 +1,14 @@
+body {
+    background-color: #89E9C2;
+    margin: 0px;
+}
+
+#bodymovin {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    text-align: center;
+    opacity: 1;
+}

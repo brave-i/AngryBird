@@ -1,0 +1,120 @@
+@media(max-width: 991px){
+
+    .social-icon img {
+    width: 37px;
+}
+
+body
+{ overflow: hidden;  position: fixed; }
+
+.f-right {
+    float: right;
+    padding-right: 8px;
+}
+.w-5 {
+    float: left;
+    width: 43%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  .reltv:before {
+    content: "";
+    background: url(../images/back.png);
+    width: 87px;
+    height: 36px;
+    position: absolute;
+    left: 17px;
+    top: -57px;
+    /* background: red; */
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    bottom: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.left-img, .right-img {
+    display: none;
+}
+.reltv {
+    position: relative;
+    width: auto;
+    padding: 19px;
+}
+.reltv:after {
+    content: "";
+    background: url(../images/next.png);
+    width: 82px;
+    height: 34px;
+    position: absolute;
+    right: 18px;
+    top: -55px;
+    /* background: red; */
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    bottom: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.icon-all {
+    position: absolute;
+    bottom: 220px;
+    right: 10px;
+}
+.icon-all img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+.img-resposive {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    box-shadow: 1px 1px 18px 1px rgba(128, 128, 128, 0.72);
+}
+.image-pen img
+{display: none;}
+
+.angry-birds-logo img {
+    max-width: 100px;
+    padding-left: 4px;
+}
+.slider-section {
+    width: 100%;
+    margin-top: 38%;
+    /* overflow: hidden; */
+}
+}
+
+
+
+
+
+
+
+
+@media(max-width: 767px){
+
+    .none
+{display: none;}
+.fab.fa-facebook-f.none, i.fab.fa-twitter.none, i.fab.fa-instagram.none {
+    display: none;
+}
+
+}
+
+@media(min-width: 767px){
+
+    .image-mobile
+    {display: none;}
+
+        .social-icon img {
+   display: none;
+}
+
+}
+
+
+
+

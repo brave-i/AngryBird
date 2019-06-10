@@ -1,0 +1,70 @@
+		*::-webkit-scrollbar {
+	        width: 10px;
+	        height: 10px;
+	    }
+
+	    /* Track */
+	    *::-webkit-scrollbar-track {
+	        box-shadow: inset 0 0 3px grey; 
+	        border-radius: 14px;
+	    }
+
+	    /* Handle */
+	    *::-webkit-scrollbar-thumb {     
+	        background: #979698; 
+	        border-radius: 14px;
+	    }
+
+	    /* Handle on hover */
+	    *::-webkit-scrollbar-thumb:hover {
+	        background: #979698; 
+	    }
+		.color1{
+			color: rgb(254, 226, 60);
+		}
+		.color2{
+			color: rgb(253, 198, 54);
+		}
+		.color3{
+			color: rgb(254, 159, 46);
+		}
+		.color4{
+			color: rgb(223, 83, 30);
+		}
+		.color5{
+			color: rgb(187, 65, 67);
+		}
+		.color6{
+			color: rgb(192, 107, 193);
+		}
+		.color7{
+			color: rgb(191, 22, 146);
+		}
+		.color8{
+			color: rgb(130, 83, 137);
+		}
+		.color9{
+			color: rgb(11, 100, 165);
+		}
+		.color10{
+			color: rgb(30, 197, 208);
+		}
+		.color11{
+			color: rgb(61, 86, 62);
+		}
+		.color12{
+			color: rgb(28, 173, 111);
+		}
+		.color13{
+			color: rgb(184, 213, 108);
+		}
+		.color14{
+			color: rgb(114, 88, 64);
+		}
+		.color15{
+			color: rgb(0, 0, 0);
+		}
+		.color16{
+			color: rgb(255, 255, 255);
+		}
+		

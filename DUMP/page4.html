@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Angry Bird</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/socialcommon_set.css">
+
+</head>
+<body>
+<div class="page__style">
+	<div id="wrapper">
+		
+		<div class="topbar">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="topsocial">
+				<a href="#" class="topbtn"><img src="images/menubar.png" alt="topbtn"></a>
+				<ul>
+					<!-- <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+					<li><a href="#"><img src="images/twitter.png" alt="facebook"></a></li>
+					<li><a href="#"><img src="images/instagram.png" alt="facebook"></a></li> -->
+					<div class="set rounded bg-fall fg-rise fg-color">
+					    <a href = "https://www.facebook.com/" class="social facebook">Facebook</a>
+					    <a href = "https://www.twitter.com" class="social twitter">Twitter</a> 
+					    <a href = "https://www.instagram.com" class="social instagram">Instagram</a>
+					</div>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="slider-section">
+			<div class="slider-main">
+				<div class="slider-btn">
+					<a href="page3.html" class="s-btn-left bubbly-button">&lt; BACK</a>
+					<a class="s-btn-right bubbly-button" onclick="goto_finalpage()">NEXT &gt;</a>
+				</div>
+				<div class="slider-item">
+					<div class="wrapper">
+						<video class="video">
+							<source src="video/angrybird.mp4" type="video/mp4" />
+						</video>
+					  <div class="playpause"></div>
+					</div>
+					<!-- <div class="s-i-img">
+						<a href="#">
+							<img src="images/slider-1.jpg" alt="slider-main">
+							<div class="overlay">
+								<img src="images/play-icon.png" alt="play" width="100">
+							</div>
+						</a>
+					</div> -->
+	
+				</div>
+			</div>
+
+			<div class="sbtnbottom">
+				<ul>
+					<li><a href="#"><img src="images/icon-1.png" alt="plus"></a></li>
+					<li><a href="#"><img src="images/icon-2.png" alt="plus"></a></li>
+					<li><a href="#"><img src="images/icon-3.png" alt="plus"></a></li>
+				</ul>
+			</div>
+		</div>
+	
+		
+		<div class="footertoggle mobilehide">
+			<div id="toggle">
+				<div class="one"></div>
+				<div class="two"></div>
+			</div>
+			<div class="ftoggleactive">
+				<div class="footer-logos">
+					<ul class="footer-social">
+						<li><a href="#"><img src="images/f-facebook.png" alt="facebook"></a></li>
+						<li><a href="#"><img src="images/f-twitter.png" alt="twitter"></a></li>
+						<li><a href="#"><img src="images/f-instagram.png" alt="instagram"></a></li>
+					</ul>
+					<a href="#"><img src="images/footer-logos.png" alt="footer-logos"></a>
+				</div>
+				<div class="copyright">
+					<ul>
+						<li><a href="#">Updated Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Updated Cookies</a></li>
+						<li><a href="#">Modern Slavery Transparency Statement</a></li>
+						<li><a href="#">UK Gender Pay Gap Report</a></li>
+					</ul>
+					<p>&copy; 2019 Columbia Pictures Industries, Inc. Angry Birds and all related properties, titles, logos and characters are trademarks of Rovio Entertainment</p>
+					<p>Corporation and Rovio Animation Ltd. and are used with permission. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/global.js"></script>
+
+<!-- <script src="js/index.js"></script>  -->
+
+
+<script>
+
+	$('.video').parent().click(function () {
+
+		if($(this).children(".video").get(0).paused)
+		{
+
+			$(this).children(".video").get(0).play();
+			$(this).children(".playpause").fadeOut();
+		}
+		else
+		{
+			$(this).children(".video").get(0).pause();
+			$(this).children(".playpause").fadeIn();
+		}
+	});
+	
+</script>
+
+
+
+
+<script>
+	$('#toggle').click(function(){
+		$(this).toggleClass('on');
+		$('.ftoggleactive').slideToggle();
+	});
+</script>
+
+<!--
+
+	<script src="js/index.js"></script>
+
+<script>
+
+	$('.video').parent().click(function () {
+
+		if($(this).children(".video").get(0).paused)
+		{
+
+			$(this).children(".video").get(0).play();
+			$(this).children(".playpause").fadeOut();
+		}
+		else
+		{
+			$(this).children(".video").get(0).pause();
+			$(this).children(".playpause").fadeIn();
+		}
+	});
+	
+	var animateButton = function(e) {
+
+		e.preventDefault;
+		//reset animation
+		e.target.classList.remove('animate');
+		e.target.classList.add('animate');
+
+		setTimeout(function(){
+			e.target.classList.remove('animate');
+		},700);
+	};
+
+	var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+	for (var i = 0; i < bubblyButtons.length; i++) {
+		bubblyButtons[i].addEventListener('click', animateButton, false);
+	}
+
+</script>
+-->
+</body>
+</html>
